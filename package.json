@@ -1,0 +1,11 @@
+{
+  "description": "Presentations",
+  "scripts": {
+    "run": "server.js"
+  },
+  "dependencies": {
+    "connect": "^3.5.0",
+    "livereload": "^0.4.1",
+    "serve-static": "^1.11.1"
+  }
+}
