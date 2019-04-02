@@ -29,7 +29,7 @@ function f2() {
 ```javascript
 (argument1, argument2, ... argumentN) => {
   // function body
-}:
+};
 
 
 const multiply = (x, y) => { return x * y };
@@ -147,7 +147,7 @@ person2.printPoints(); // 0
 ```
 ---
 ### Arrow functions
-Arrow functions are awesome, but not a solution to the JavaScript scope problem. Use them when it makes sense. 
+Arrow functions are awesome, but not a foolproof solution to the JavaScript scope problem. Use them when it makes sense. 
 
 * When to use arrow functions:
   + Functions applied to items in a list
