@@ -320,7 +320,7 @@ f();
 
 #### Example
 ```javascript
-const verifyUser = async function(username, password) {
+const verifyUser = async (username, password) => {
   try {
     const userInfo = await dataBase.verifyUser(username, password);
     const rolesInfo = await dataBase.getRoles(userInfo);
