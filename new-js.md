@@ -356,6 +356,7 @@ grandchild.get(); // 1
 
 
 ```
+
 ---
 
 
@@ -389,7 +390,9 @@ child.get(); // 1
 
 
 ```
+
 ---
+
 ## Classes
 ### Using Class
 Syntax sugar for the prototype version.
@@ -409,6 +412,7 @@ let child = new Parent(1);
 child.get(); // 1
 
 ```
+
 ----
 
 ## Inheritance
@@ -444,7 +448,9 @@ child.get(); // 12
 
 
 ```
+
 ---
+
 ## Inheritance
 ### Using Class
 Syntax sugar for the prototype version.
@@ -476,7 +482,9 @@ child.getName(); // r
 child.get(); // 12
 
 ```
+
 ----
+
 #### Summary
 * Always use let.
 * Use arrow function whenever it makes sense.
