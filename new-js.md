@@ -483,7 +483,10 @@ child.get(); // 12
 
 
 ```
+
+
 ----
+
 
 #### Summary
 * Always use let.
@@ -493,5 +496,6 @@ child.get(); // 12
 * Use classes and think in prototypes.
 
 ---
+
 ## Questions?
 
