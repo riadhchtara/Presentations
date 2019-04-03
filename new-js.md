@@ -336,6 +336,7 @@ const verifyUser = async (username, password) => {
 ### Prototypes
 + Every JavaScript object has a prototype.
 + If you try to call a method or get a property from an object, and it doesn't exist in the object, JavaScript will traverse the prototype chain until it finds it. Otherwise, it is undefined.
+
 ```javascript
 
 let parent = {
