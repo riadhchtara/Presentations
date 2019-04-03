@@ -332,12 +332,156 @@ const verifyUser = async (username, password) => {
 }
 ```
 ---
+## Prototypes
+### Prototypes
++ Every JavaScript object has a prototype.
++ If you try to call a method or get a property from an object, and it doesn't exist in the object, JavaScript will traverse the prototype chain until it finds it. Otherwise, it is undefined.
+```javascript
+
+let parent = {
+  fn: function() {
+    return this.val;
+  },
+  val : 0
+} 
+
+var child = Object.create(parent); // set child protype to parent
+child.get(); // 0
+child.val =  1;
+child.a; // undefined
+
+var grandchild = Object.create(child); // set grandchild protype to child
+grandchild.get(); // 1
+
+
+```
+---
+
+
+## Prototypes
+### Functions
+
+Whenever you create a function, you create two objects:
++ the function object (has the properties: name, length and prototype)
++ the function prototype object which has the constructor property
+
+
+---
+
+
+
+## Classes
+### Using Prototype
+```javascript
+
+function Parent(val) {
+  this.val = val;  
+}
+
+Parent.porototype.get = function() {
+  return val;
+}
+
+let child = new Parent(1);
+child.get(); // 1
+
+
+
+```
+---
+## Classes
+### Using Class
+Syntax sugar for the prototype version.
+
+```javascript
+
+class Parent {
+ constructor(val) {
+    this.val = val;  
+  }
+  get() {
+    return this.val;
+  } 
+}
+
+let child = new Parent(1);
+child.get(); // 1
+
+```
+----
+
+## Inheritance
+### Using Prototype
+
+```javascript
+
+function GrandParent(name) {
+  this.name = name;  
+}
+
+GrandParent.porototype.getName = function() {
+  return val;
+}
+
+
+function Parent(val, name) {
+  this.val = val;
+  GrandPrent.call(this, name);
+}
+
+Parent.porototype = new GrandParent();
+
+Parent.porototype.get = function() {
+  return val;
+}
+
+
+let child = new Child(12, "r");
+
+child.getName(); // r
+child.get(); // 12
+
+
+```
+---
+## Inheritance
+### Using Class
+Syntax sugar for the prototype version.
+```javascript
+
+class GrandParent {
+  constructor(name) {
+    this.name = name;  
+  }
+  getName() {
+    return this.name;
+  }
+}
+
+
+class Parent extends GrandParent {
+  constructor(val, name) {
+    this.val = val;
+    super(name);
+  }
+  get() {
+    return this.val;
+  } 
+}
+
+let child = new Child(12, "r");
+
+child.getName(); // r
+child.get(); // 12
+
+```
+----
 #### Summary
 * Always use let.
 * Use arrow function whenever it makes sense.
 * Never use eval.
 * Always use async and await for making async calls.
-
+* Use classes and think in prototypes.
 
 ---
 ## Questions?
