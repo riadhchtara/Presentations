@@ -446,9 +446,7 @@ child.get(); // 12
 
 
 ```
-
 ---
-
 ## Inheritance
 ### Using Class
 Syntax sugar for the prototype version.
@@ -482,7 +480,6 @@ child.get(); // 12
 
 ```
 ----
-
 #### Summary
 * Always use let.
 * Use arrow function whenever it makes sense.
