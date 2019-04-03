@@ -355,6 +355,7 @@ var grandchild = Object.create(child); // set grandchild protype to child
 grandchild.get(); // 1
 
 
+
 ```
 ---
 
@@ -393,6 +394,7 @@ child.get(); // 1
 
 ## Classes
 ### Using Class
+
 Syntax sugar for the prototype version.
 
 ```javascript
@@ -449,7 +451,9 @@ child.get(); // 12
 ---
 ## Inheritance
 ### Using Class
+
 Syntax sugar for the prototype version.
+
 ```javascript
 
 class GrandParent {
@@ -480,6 +484,7 @@ child.get(); // 12
 
 ```
 ----
+
 #### Summary
 * Always use let.
 * Use arrow function whenever it makes sense.
