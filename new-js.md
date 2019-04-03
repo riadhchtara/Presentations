@@ -413,7 +413,7 @@ child.get(); // 1
 
 
 ```
-----
+---
 
 ## Inheritance
 ### Using Prototype
