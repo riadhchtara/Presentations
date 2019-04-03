@@ -409,6 +409,7 @@ class Parent {
 let child = new Parent(1);
 child.get(); // 1
 
+
 ```
 ----
 
@@ -477,6 +478,7 @@ let child = new Child(12, "r");
 
 child.getName(); // r
 child.get(); // 12
+
 
 ```
 ----
