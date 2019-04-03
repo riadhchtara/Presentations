@@ -356,7 +356,6 @@ grandchild.get(); // 1
 
 
 ```
-
 ---
 
 
@@ -390,7 +389,6 @@ child.get(); // 1
 
 
 ```
-
 ---
 
 ## Classes
@@ -412,7 +410,6 @@ let child = new Parent(1);
 child.get(); // 1
 
 ```
-
 ----
 
 ## Inheritance
@@ -482,7 +479,6 @@ child.getName(); // r
 child.get(); // 12
 
 ```
-
 ----
 
 #### Summary
